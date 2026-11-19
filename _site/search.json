@@ -4,20 +4,6 @@
     "href": "index.html",
     "title": "Baseball by the Numbers",
     "section": "",
-    "text": "Welcome! This site explores the history of Major League Baseball through its data, using the Lahman database. We’ll use those records to see how the game and its players have changed over time."
-  },
-  {
-    "objectID": "home-runs.html",
-    "href": "home-runs.html",
-    "title": "Home runs",
-    "section": "",
-    "text": "# A tibble: 155 × 3\n   yearID total_home_runs total_team_games\n    &lt;int&gt;           &lt;int&gt;            &lt;int&gt;\n 1   1871              47              254\n 2   1872              37              366\n 3   1873              47              398\n 4   1874              40              464\n 5   1875              40              690\n 6   1876              40              520\n 7   1877              24              360\n 8   1878              23              368\n 9   1879              58              642\n10   1880              62              680\n# ℹ 145 more rows"
-  },
-  {
-    "objectID": "sluggers.html",
-    "href": "sluggers.html",
-    "title": "Sluggers",
-    "section": "",
-    "text": "# A tibble: 15 × 3\n   player           career_home_runs seasons     \n   &lt;chr&gt;                       &lt;int&gt; &lt;chr&gt;       \n 1 Barry Bonds                   762 1986 to 2007\n 2 Hank Aaron                    755 1954 to 1976\n 3 Babe Ruth                     714 1914 to 1935\n 4 Albert Pujols                 703 2001 to 2022\n 5 Alex Rodriguez                696 1994 to 2016\n 6 Willie Mays                   660 1948 to 1973\n 7 Ken Griffey                   630 1989 to 2010\n 8 Jim Thome                     612 1991 to 2012\n 9 Sammy Sosa                    609 1989 to 2007\n10 Frank Robinson                586 1956 to 1976\n11 Mark McGwire                  583 1986 to 2001\n12 Harmon Killebrew              573 1954 to 1975\n13 Rafael Palmeiro               569 1986 to 2005\n14 Reggie Jackson                563 1967 to 1987\n15 Manny Ramirez                 555 1993 to 2011"
+    "text": "This site uses Lahman baseball records to explore how home-run hitting has changed over time. Home runs per team game rose from about 0.79 in 1990 to a peak of 1.39 in 2019, before falling to about 1.12 in 2024.\nThe Sluggers page ranks career home-run leaders: Barry Bonds leads with 762, followed by Hank Aaron and Babe Ruth. Use the analysis pages in the navbar to explore the season-by-season trend and the player leaderboard."
   }
 ]
