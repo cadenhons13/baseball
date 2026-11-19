@@ -1,0 +1,11 @@
+project:
+  type: website
+
+website:
+  navbar:
+    left:
+      - text: "Home runs"
+        href: home-runs.qmd
+
+execute:
+  echo: false

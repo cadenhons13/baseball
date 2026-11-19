@@ -1,0 +1,5 @@
+---
+title: "Baseball by the Numbers"
+---
+
+Welcome! This site explores the history of Major League Baseball through its data, using the Lahman database. We’ll use those records to see how the game and its players have changed over time.
