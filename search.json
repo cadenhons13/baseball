@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Baseball by the Numbers",
+    "section": "",
+    "text": "This site uses Lahman baseball records to explore how home-run hitting has changed over time. Home runs per team game rose from about 0.79 in 1990 to a peak of 1.39 in 2019, before falling to about 1.12 in 2024.\nThe Sluggers page ranks career home-run leaders: Barry Bonds leads with 762, followed by Hank Aaron and Babe Ruth. Use the analysis pages in the navbar to explore the season-by-season trend and the player leaderboard."
+  }
+]
