@@ -1,0 +1,50 @@
+---
+title: "Sluggers"
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(Lahman)
+```
+
+```{r}
+career_home_runs <- Batting |>
+  group_by(playerID) |>
+  summarise(
+    career_home_runs = sum(HR, na.rm = TRUE),
+    first_year = min(yearID),
+    last_year = max(yearID),
+    .groups = "drop"
+  ) |>
+  left_join(
+    People |> select(playerID, nameFirst, nameLast),
+    by = "playerID"
+  ) |>
+  arrange(desc(career_home_runs)) |>
+  slice_head(n = 15) |>
+  mutate(
+    player = str_c(nameFirst, nameLast, sep = " ")
+  ) |>
+  select(player, career_home_runs, first_year, last_year)
+
+career_home_runs |>
+  mutate(
+    steroid_era = if_else(
+      last_year >= 1994 & first_year <= 2009,
+      "Career overlapped steroid era",
+      "Career did not overlap steroid era"
+    ),
+    player = fct_reorder(player, career_home_runs)
+  ) |>
+  ggplot(aes(x = career_home_runs, y = player, fill = steroid_era)) +
+  geom_col() +
+  labs(
+    title = "Career Home Runs of the Top 15 Sluggers",
+    x = "Career home runs",
+    y = "Player",
+    fill = "Career overlap",
+    caption = "Active means the player's career overlapped 1994 to 2009."
+  ) +
+  theme_minimal()
+```
